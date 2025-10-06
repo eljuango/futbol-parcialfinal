@@ -1,0 +1,67 @@
+.equipos-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.equipos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.equipo-card {
+  background: var(--verde);
+  color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.equipo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.equipo-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--amarillo);
+  margin-bottom: 1rem;
+}
+
+.equipo-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--amarillo);
+}
+
+.equipo-card .ciudad {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.equipo-card .descripcion {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+@media (max-width: 800px) {
+  .equipos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .equipos-grid {
+    grid-template-columns: 1fr;
+  }
+}

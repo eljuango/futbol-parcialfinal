@@ -1,0 +1,56 @@
+/*Estilos globales */
+:root {
+  --verde: #006400;
+  --amarillo: #ffde59;
+  --negro: #111;
+  --gris: #f4f4f9;
+  --fuente: "Poppins", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--fuente);
+  margin: 0;
+  background-color: var(--gris);
+  color: var(--negro);
+  line-height: 1.6;
+}
+
+/* Espaciado general */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Links generales */
+a {
+  color: var(--verde);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--amarillo);
+}
+
+/* Titulares */
+h1, h2 {
+  font-weight: 700;
+  text-align: center;
+  color: var(--verde);
+}
+
+/* Animación de entrada */
+section, header, footer {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Imágenes */
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
